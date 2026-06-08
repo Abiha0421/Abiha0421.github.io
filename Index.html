@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syeda Abiha Fatima | Digital Forensics & Cybersecurity Analyst</title>
+    <meta name="description" content="Cybersecurity portfolio of Syeda Abiha Fatima, Digital Forensics Expert and Incident Responder.">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Interactive Background and overlays -->
+    <canvas id="cyber-canvas"></canvas>
+    <div class="custom-cursor"></div>
+    <div class="cursor-glow"></div>
+    <div class="scanline"></div>
+
+    <!-- Unified Forensics Console Header -->
+    <header class="forensic-header">
+        <!-- Telemetry Row -->
+        <div class="telemetry-row">
+            <div class="hud-item">
+                <span class="hud-pulse"></span> STATUS: <span class="hud-value">MONITORING_ACTIVE</span>
+            </div>
+            <div class="hud-item mobile-hidden">
+                CORE_INTEGRITY: <span class="hud-value">100% (SECURE)</span>
+            </div>
+            <div class="hud-item mobile-hidden">
+                CASE_LOAD: <span class="hud-value">12_ACTIVE_DOSSIERS</span>
+            </div>
+            <div class="hud-item">
+                SYS_TIME: <span id="hud-clock" class="hud-value">00:00:00 UTC</span>
+            </div>
+        </div>
+        
+        <!-- Navigation Row -->
+        <div class="nav-row">
+            <div class="nav-brand">
+                <i class="fas fa-microscope" style="color: var(--primary);"></i> SAF_FORENSICS_<span>SYS</span>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-tabs">
+                <li><a href="#home">/home</a></li>
+                <li><a href="#dossier">/dossier</a></li>
+                <li><a href="#logs">/logs</a></li>
+                <li><a href="#toolkit">/toolkit</a></li>
+                <li><a href="#certifications">/certifications</a></li>
+                <li><a href="#investigations">/investigations</a></li>
+                <li><a href="#lab">/forensic_lab</a></li>
+                <li><a href="#connection">/connect</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2 class="cyber-greeting">>_ system_status: online</h2>
+                <h1 class="glitch-title" data-text="SYEDA ABIHA FATIMA">SYEDA ABIHA FATIMA</h1>
+                <h3 class="cyber-subtitle">> Digital Forensics Analyst & Cybersecurity Specialist<span class="cursor">_</span></h3>
+                <div class="action-btns">
+                    <a href="#connection" class="btn cyber-btn"><i class="fas fa-key"></i> Establish_Connection</a>
+                    <a href="#lab" class="btn cyber-btn-outline"><i class="fas fa-flask"></i> Enter_Forensic_Lab</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Personnel Dossier Section (About Me) -->
+        <section id="dossier" class="section">
+            <h2 class="section-title"><span class="highlight">01.</span> Personnel_Dossier</h2>
+            <div class="dossier-layout glass-panel">
+                <div class="panel-accent-bottom"></div>
+                <div class="dossier-avatar-container">
+                    <div class="dossier-avatar-wrapper">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <div class="dossier-meta">
+                        <div class="dossier-meta-item">
+                            <span>REGISTRY:</span>
+                            <span class="dossier-meta-val">#SAF-88392</span>
+                        </div>
+                        <div class="dossier-meta-item">
+                            <span>CLASS:</span>
+                            <span class="dossier-meta-val">ANALYST_L3</span>
+                        </div>
+                        <div class="dossier-meta-item">
+                            <span>THREAT_INDEX:</span>
+                            <span class="dossier-meta-val" style="color: var(--secondary);">0.0 (SAFE)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="dossier-details">
+                    <div class="dossier-header">
+                        <h3 class="dossier-title">Syeda Abiha Fatima</h3>
+                        <p class="dossier-subtitle">BS Computer Science Candidate // VU Pakistan</p>
+                    </div>
+                    <div class="dossier-body">
+                        <p>> Welcome to my secure server directory. I am a dedicated digital investigator and cybersecurity researcher. I specialize in analyzing file structures, carving digital evidence, inspecting incident vectors, and mitigating cyber intrusions.</p>
+                        <p>> My computer science framework supports advanced forensics capabilities. I focus on developing proactive security software, performing network diagnostic scans, and analyzing endpoint vulnerabilities to build robust cyber-defense frameworks.</p>
+                    </div>
+                    <div class="dossier-grid">
+                        <div class="dossier-grid-item">
+                            <div class="dossier-grid-label">OPERATIONAL FOCUS</div>
+                            <div class="dossier-grid-value">Digital Forensics & Incident Response</div>
+                        </div>
+                        <div class="dossier-grid-item">
+                            <div class="dossier-grid-label">LOCATION</div>
+                            <div class="dossier-grid-value">Islamabad, PK (Remote Ready)</div>
+                        </div>
+                        <div class="dossier-grid-item">
+                            <div class="dossier-grid-label">INVESTIGATION METRIC</div>
+                            <div class="dossier-grid-value">12+ Cases Analyzed</div>
+                        </div>
+                        <div class="dossier-grid-item">
+                            <div class="dossier-grid-label">CLEARANCE STATUS</div>
+                            <div class="dossier-grid-value">Active Core Sec</div>
+                        </div>
+                    </div>
+                    <div class="dossier-socials">
+                        <a href="https://github.com/Abiha0421" target="_blank" class="dossier-social-btn" title="Secure GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/syeda-abiha-fatima-102b69342" target="_blank" class="dossier-social-btn" title="LinkedIn Feed"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Logs Section (Experience) -->
+        <section id="logs" class="section">
+            <h2 class="section-title"><span class="highlight">02.</span> Operational_Logs</h2>
+            <div class="timeline-container">
+                <div class="timeline-logs">
+                    <!-- Log 1 -->
+                    <div class="log-entry active-log">
+                        <div class="log-header">
+                            <span class="log-timestamp">[LOG STAMP: 2025-10-01 09:00:00Z]</span>
+                            <span class="log-status active">MONITORING</span>
+                        </div>
+                        <div class="log-title-row">
+                            <h3 class="log-role">Forensics Analyst</h3>
+                            <a href="https://www.linkedin.com/company/teamdarksi" target="_blank" class="log-company">@Darksi_Sec</a>
+                        </div>
+                        <p class="log-description">> Performing post-incident digital forensic analysis, scanning memory artifacts, examining packet streams, and generating detailed evidence chain-of-custody reports for corporate security infrastructure.</p>
+                    </div>
+
+                    <!-- Log 2 -->
+                    <div class="log-entry">
+                        <div class="log-header">
+                            <span class="log-timestamp">[LOG STAMP: 2025-02-15 08:30:00Z]</span>
+                            <span class="log-status">ARCHIVED</span>
+                        </div>
+                        <div class="log-title-row">
+                            <h3 class="log-role">Operations & Content Lead</h3>
+                            <a href="https://www.linkedin.com/company/cyberxchronicles" target="_blank" class="log-company">@CyberXChronicles</a>
+                        </div>
+                        <p class="log-description">> Directed content operations, threat intelligence reporting, and cybersecurity literacy outreach, building a telemetry network to broadcast zero-day vulnerabilities and containment methods.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Competencies Section (Skills) -->
+        <section id="toolkit" class="section">
+            <h2 class="section-title"><span class="highlight">03.</span> Telemetry_Toolkit</h2>
+            <div class="skills-container">
+                <div class="skills-telemetry-grid">
+                    <!-- Skill 1 -->
+                    <div class="telemetry-card">
+                        <div class="telemetry-header">
+                            <div class="telemetry-icon-box"><i class="fas fa-search-plus"></i></div>
+                            <h3 class="telemetry-title">Digital Forensics</h3>
+                        </div>
+                        <div class="telemetry-body">
+                            <p>Analyzing disk filesystem images, tracking registries, carving file fragments, and documenting security incident forensic tracks.</p>
+                            <div class="telemetry-meter">
+                                <div class="meter-header">
+                                    <span>FORENSIC_INTEGRITY</span>
+                                    <span>88%</span>
+                                </div>
+                                <div class="meter-track">
+                                    <div class="meter-fill" style="width: 88%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 2 -->
+                    <div class="telemetry-card">
+                        <div class="telemetry-header">
+                            <div class="telemetry-icon-box"><i class="fas fa-shield-virus"></i></div>
+                            <h3 class="telemetry-title">Incident Response</h3>
+                        </div>
+                        <div class="telemetry-body">
+                            <p>Mitigating live breaches, containing active malware threats, restoring systems, and logging network telemetry metrics.</p>
+                            <div class="telemetry-meter">
+                                <div class="meter-header">
+                                    <span>BREACH_CONTAINMENT</span>
+                                    <span>82%</span>
+                                </div>
+                                <div class="meter-track">
+                                    <div class="meter-fill" style="width: 82%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 3 -->
+                    <div class="telemetry-card">
+                        <div class="telemetry-header">
+                            <div class="telemetry-icon-box"><i class="fas fa-project-diagram"></i></div>
+                            <h3 class="telemetry-title">Risk Assessments</h3>
+                        </div>
+                        <div class="telemetry-body">
+                            <p>Discovering threat exposures, performing audits, aligning with security control frameworks, and reporting attack footprints.</p>
+                            <div class="telemetry-meter">
+                                <div class="meter-header">
+                                    <span>THREAT_MITIGATION</span>
+                                    <span>76%</span>
+                                </div>
+                                <div class="meter-track">
+                                    <div class="meter-fill" style="width: 76%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 4 -->
+                    <div class="telemetry-card">
+                        <div class="telemetry-header">
+                            <div class="telemetry-icon-box"><i class="fas fa-bug"></i></div>
+                            <h3 class="telemetry-title">Security Testing</h3>
+                        </div>
+                        <div class="telemetry-body">
+                            <p>Performing scanning, reconnaissance, testing APIs, analyzing zero-day structures, and testing local controls.</p>
+                            <div class="telemetry-meter">
+                                <div class="meter-header">
+                                    <span>PENTEST_RECON</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="meter-track">
+                                    <div class="meter-fill" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 5 -->
+                    <div class="telemetry-card">
+                        <div class="telemetry-header">
+                            <div class="telemetry-icon-box"><i class="fas fa-network-wired"></i></div>
+                            <h3 class="telemetry-title">Network Security</h3>
+                        </div>
+                        <div class="telemetry-body">
+                            <p>Inspecting packet traces in Wireshark, checking configurations, tracking port telemetry, and examining routing tables.</p>
+                            <div class="telemetry-meter">
+                                <div class="meter-header">
+                                    <span>PACKET_INSPECTION</span>
+                                    <span>78%</span>
+                                </div>
+                                <div class="meter-track">
+                                    <div class="meter-fill" style="width: 78%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill 6 -->
+                    <div class="telemetry-card">
+                        <div class="telemetry-header">
+                            <div class="telemetry-icon-box"><i class="fas fa-server"></i></div>
+                            <h3 class="telemetry-title">OS Hardening</h3>
+                        </div>
+                        <div class="telemetry-body">
+                            <p>Implementing security logs policies in Windows and configuring server rules and file restrictions in Linux systems.</p>
+                            <div class="telemetry-meter">
+                                <div class="meter-header">
+                                    <span>SYS_HARDENING</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="meter-track">
+                                    <div class="meter-fill" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="section">
+            <h2 class="section-title"><span class="highlight">04.</span> Credentials_&_Clearances</h2>
+            <div class="certificates-grid">
+                <!-- Cert 1 -->
+                <div class="cert-card">
+                    <div class="cert-icon-wrapper">
+                        <i class="fas fa-user-check"></i>
+                        <a href="https://www.credly.com/badges/88dfea80-fe95-4f6e-8c67-717bb2088d97/linked_in_profile" target="_blank" class="cert-link" title="Verify Credentials"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <h3>ISC2 Candidate</h3>
+                    <p class="cert-org">ISC2 Professional Body</p>
+                    <p class="cert-desc">Verified commitment to information security principles, ethics, and standard defense paradigms.</p>
+                </div>
+
+                <!-- Cert 2 -->
+                <div class="cert-card">
+                    <div class="cert-icon-wrapper">
+                        <i class="fas fa-shield-halved"></i>
+                        <a href="https://www.credly.com/badges/37291c5b-f11a-49d0-996f-e14595321f80/linked_in_profile" target="_blank" class="cert-link" title="Verify Credentials"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <h3>Ethical Hacker</h3>
+                    <p class="cert-org">Cisco Networking Academy</p>
+                    <p class="cert-desc">Covers legal paradigms, vulnerability scanning, security control mapping, and defense diagnostics.</p>
+                </div>
+
+                <!-- Cert 3 -->
+                <div class="cert-card">
+                    <div class="cert-icon-wrapper">
+                        <i class="fas fa-shield-virus"></i>
+                        <a href="https://www.credly.com/badges/964589b3-e22e-4461-ace0-87ff3c8f4018/linked_in_profile" target="_blank" class="cert-link" title="Verify Credentials"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <h3>Cyber Threat Management</h3>
+                    <p class="cert-org">Cisco Networking Academy</p>
+                    <p class="cert-desc">Covers risk management methodologies, threat vector containment, and incident response execution plans.</p>
+                </div>
+
+                <!-- Cert 4 -->
+                <div class="cert-card">
+                    <div class="cert-icon-wrapper">
+                        <i class="fab fa-ethereum"></i>
+                        <a href="https://id.opencampus.xyz/public/credentials/details?username=abiha21.edu&id=183740964155059831613980972624336566065" target="_blank" class="cert-link" title="Verify Credentials"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <h3>Web3 Developer</h3>
+                    <p class="cert-org">Open Campus</p>
+                    <p class="cert-desc">Validates core competency in smart contracts execution, blockchain ledger security, and decentralized code structures.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Investigations Section (Projects) -->
+        <section id="investigations" class="section">
+            <h2 class="section-title"><span class="highlight">05.</span> Incident_Investigations</h2>
+            <div class="projects-container">
+                <div class="case-grid">
+                    <!-- Project 1 -->
+                    <div class="case-file-card">
+                        <div class="case-badge-row">
+                            <span class="case-num">CASE_FILE_081_KEYSTROKE</span>
+                            <span class="case-status-badge">CLOSED</span>
+                        </div>
+                        <h3 class="case-title">Key Stroker Analyzer</h3>
+                        <p class="case-date">OCT 2025 - PRESENT</p>
+                        <p class="case-description">Python-based GUI utility analyzing keystroke telemetry for biometric pattern modeling. Measures key latency intervals to spot anomalies, firing Discord/Telegram webhook alert logs on security flags.</p>
+                        <div class="case-metadata">
+                            <div class="meta-field">ALGORITHM: <span>Inter-Key Latency Analysis</span></div>
+                            <div class="meta-field">LANGUAGES: <span>Python, CustomTkinter</span></div>
+                            <div class="meta-field">HASH_MD5: <span>2a7f80b91e92d8f331c19b2</span></div>
+                        </div>
+                        <div class="case-actions">
+                            <a href="https://github.com/Abiha0421/Key-Stroke-Tool" target="_blank" class="case-btn"><i class="fab fa-github"></i> Inspect_Source</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="case-file-card">
+                        <div class="case-badge-row">
+                            <span class="case-num">CASE_FILE_082_SAFESCAN</span>
+                            <span class="case-status-badge">CLOSED</span>
+                        </div>
+                        <h3 class="case-title">Safe-Scan Recon Utility</h3>
+                        <p class="case-date">OCT 2025 - PRESENT</p>
+                        <p class="case-description">Command-line ethical vulnerability reconnaissance module. Crawls endpoints, maps structures, and conducts passive non-destructive compliance checks for target infrastructure vulnerabilities.</p>
+                        <div class="case-metadata">
+                            <div class="meta-field">ALGORITHM: <span>Passive Recon Crawler</span></div>
+                            <div class="meta-field">LANGUAGES: <span>Python, CLI</span></div>
+                            <div class="meta-field">HASH_MD5: <span>89df82c65a7e1892c90f23d</span></div>
+                        </div>
+                        <div class="case-actions">
+                            <a href="https://github.com/Abiha0421/Save-Recon-Scanner" target="_blank" class="case-btn"><i class="fab fa-github"></i> Inspect_Source</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="case-file-card">
+                        <div class="case-badge-row">
+                            <span class="case-num">CASE_FILE_083_PORTSCAN</span>
+                            <span class="case-status-badge">CLOSED</span>
+                        </div>
+                        <h3 class="case-title">TCP Port Scanner</h3>
+                        <p class="case-date">OCT 2025 - PRESENT</p>
+                        <p class="case-description">Interactive socket port scanner with CustomTkinter GUI. Scans target IP ranges, verifies open ports, executes banner grabbing to detect OS footprints, and returns reports.</p>
+                        <div class="case-metadata">
+                            <div class="meta-field">ALGORITHM: <span>Multi-threaded TCP Connect</span></div>
+                            <div class="meta-field">LANGUAGES: <span>Python, Socket API</span></div>
+                            <div class="meta-field">HASH_MD5: <span>7a1b0ffc1d2e93a0b5c1103</span></div>
+                        </div>
+                        <div class="case-actions">
+                            <a href="https://github.com/Abiha0421/Port-Scanner" target="_blank" class="case-btn"><i class="fab fa-github"></i> Inspect_Source</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="case-file-card">
+                        <div class="case-badge-row">
+                            <span class="case-num">CASE_FILE_084_WHATIFAI</span>
+                            <span class="case-status-badge">IN_PROGRESS</span>
+                        </div>
+                        <h3 class="case-title">What If AI?</h3>
+                        <p class="case-date">SEP 2025 - PRESENT</p>
+                        <p class="case-description">Strategic AI simulator simulating red/blue team attack vectors. Simulates defensive layouts, assesses threat exposure, and generates mitigation scripts dynamically.</p>
+                        <div class="case-metadata">
+                            <div class="meta-field">ALGORITHM: <span>Defensive AI Agent Grid</span></div>
+                            <div class="meta-field">LANGUAGES: <span>Python, LLM Frameworks</span></div>
+                            <div class="meta-field">HASH_MD5: <span>4f8c2de919a002bc5e7a9b1</span></div>
+                        </div>
+                        <div class="case-actions">
+                            <a href="https://github.com/Abiha0421/What-If-AI" target="_blank" class="case-btn"><i class="fab fa-github"></i> Inspect_Source</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 (Collaborative) -->
+                    <div class="case-file-card">
+                        <div class="case-badge-row">
+                            <span class="case-num">CASE_FILE_091_INOTES</span>
+                            <span class="case-status-badge">CLOSED</span>
+                        </div>
+                        <h3 class="case-title">I-Notes Extension</h3>
+                        <p class="case-date">FEB 2025 - MAR 2025</p>
+                        <p class="case-description">Collaborative productivity chrome browser utility. Provides localized file-less notes management using secure local browser session parameters for sandbox stability.</p>
+                        <div class="case-metadata">
+                            <div class="meta-field">ALGORITHM: <span>Local Storage Sync</span></div>
+                            <div class="meta-field">LANGUAGES: <span>HTML, CSS, JavaScript</span></div>
+                            <div class="meta-field">HASH_MD5: <span>1b0c9f1a23e98b7a0f1d12c</span></div>
+                        </div>
+                        <div class="case-actions">
+                            <a href="https://github.com/Abiha0421/chrome-notes" target="_blank" class="case-btn"><i class="fab fa-github"></i> Inspect_Source</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Forensic Lab & Terminal Section -->
+        <section id="lab" class="section">
+            <h2 class="section-title"><span class="highlight">06.</span> Forensic_Lab_Simulator</h2>
+            <div class="lab-layout">
+                
+                <!-- Digital Evidence Carver Panel -->
+                <div class="lab-panel glass-panel">
+                    <div class="panel-accent-bottom"></div>
+                    <div class="lab-panel-header">
+                        <h3 class="lab-panel-title"><i class="fas fa-hdd"></i> Evidence Sector Carver</h3>
+                        <span class="lab-status-text">[SYSTEM READY]</span>
+                    </div>
+                    
+                    <div class="carver-container">
+                        <div class="carver-upload-zone" id="carver-trigger">
+                            <i class="fas fa-file-invoice"></i>
+                            <h4>Load Corrupted Evidence</h4>
+                            <p>Click to mount raw forensic image partition and run carver heuristics.</p>
+                        </div>
+                        
+                        <div class="carver-console">
+                            <div class="carver-console-header">
+                                <span>OUTPUT_LOG</span>
+                                <span>SECURE_SHELL</span>
+                            </div>
+                            <div class="carver-console-body" id="carver-output">
+                                <div class="terminal-line">> Click 'Load Corrupted Evidence' to begin carve execution.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Password Hash Decryptor Panel -->
+                <div class="lab-panel glass-panel">
+                    <div class="panel-accent-bottom"></div>
+                    <div class="lab-panel-header">
+                        <h3 class="lab-panel-title"><i class="fas fa-shield-halved"></i> Hash Bruteforcer</h3>
+                        <span class="lab-status-text">[CRYPTO_MODULE_IDLE]</span>
+                    </div>
+                    
+                    <div class="decryptor-container">
+                        <div class="decryptor-input-form">
+                            <div class="form-group">
+                                <label for="hash-input">TARGET HASH (MD5/SHA256)</label>
+                                <input type="text" id="hash-input" class="cyber-input" value="8a5b9b18b28a2a0c4f8d2345e67a80b9" placeholder="Enter hexadecimal hash...">
+                            </div>
+                            <div class="form-group" style="margin-top: 10px;">
+                                <label>Bruteforce Algorithm Profile</label>
+                                <select class="cyber-input">
+                                    <option>Standard Dictionary (Fast)</option>
+                                    <option>Hex Numeric Masking</option>
+                                    <option>Rainbow Table Lookup</option>
+                                </select>
+                            </div>
+                            <button class="btn cyber-btn" style="margin-top: 15px; cursor: pointer;" id="decrypt-btn"><i class="fas fa-key"></i> Decrypt Hash</button>
+                        </div>
+                        
+                        <div class="decryptor-display">
+                            <div class="matrix-overlay" id="decryptor-matrix"></div>
+                            <div class="decrypt-result-text" id="decryptor-output">CRYPTO MODULE INERT. INPUT TARGET HASH.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Command Terminal Widget -->
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <div class="terminal-btn"></div>
+                            <div class="terminal-btn"></div>
+                            <div class="terminal-btn"></div>
+                        </div>
+                        <div class="terminal-title">guest@saf-forensics: ~</div>
+                        <div>bash 5.2</div>
+                    </div>
+                    
+                    <div class="terminal-body" id="terminal-body">
+                        <div class="terminal-line">Syeda Abiha Fatima Cybersecurity Command Terminal [Version 2.0.4]</div>
+                        <div class="terminal-line">Type 'help' to see list of valid forensic operational commands.</div>
+                        <div class="terminal-line"></div>
+                        
+                        <div class="terminal-prompt-line">
+                            <span class="terminal-prompt">guest@saf-forensics:~$</span>
+                            <input type="text" class="terminal-input" id="terminal-input" placeholder="Type a command..." autocomplete="off">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Connect Section (Contact) -->
+        <section id="connection" class="section">
+            <h2 class="section-title"><span class="highlight">07.</span> Establish_Connection</h2>
+            <div class="contact-dossier-panel glass-panel">
+                <div class="panel-accent-bottom"></div>
+                <div class="contact-indicator-box">
+                    <span class="hud-pulse"></span>
+                    <span>SECURE_COMMUNICATION_CHANNELS_OPEN</span>
+                </div>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 25px; line-height: 1.6; text-align: left;">
+                    > Session Established: Secure channels are active. Use the direct keys below for investigations, zero-day threat telemetry, security audits, or academic collaborations.
+                </p>
+                
+                <div class="contact-channels-container">
+                    <a href="mailto:syedaabihaf37@gmail.com" class="contact-channel">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-channel-details">
+                            <span class="contact-label">EMAIL_LINK (SMTP)</span>
+                            <span class="contact-value">syedaabihaf37@gmail.com</span>
+                        </div>
+                    </a>
+                    
+                    <a href="https://www.linkedin.com/in/syeda-abiha-fatima-102b69342" target="_blank" class="contact-channel">
+                        <i class="fab fa-linkedin-in"></i>
+                        <div class="contact-channel-details">
+                            <span class="contact-label">SECURE_LINKEDIN (HTTPS)</span>
+                            <span class="contact-value">Syeda Abiha Fatima</span>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/Abiha0421" target="_blank" class="contact-channel">
+                        <i class="fab fa-github"></i>
+                        <div class="contact-channel-details">
+                            <span class="contact-label">SOURCE_REPOSITORY (GIT)</span>
+                            <span class="contact-value">github.com/Abiha0421</span>
+                        </div>
+                    </a>
+                    
+                    <div class="contact-channel">
+                        <i class="fas fa-fingerprint"></i>
+                        <div class="contact-channel-details">
+                            <span class="contact-label">SECURE_PGP_KEY_FINGERPRINT</span>
+                            <span class="contact-value pgp-text">F68E 342B 091F AC8D 1083 490E 58BA DF30 A829 CF10</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Secure Footer -->
+    <footer class="cyber-footer">
+        <p>SYSTEM DEVELOPED BY SYEDA ABIHA FATIMA &copy; 2026. ALL TELEMETRY CHANNELS ENCRYPTED.</p>
+        <p class="footer-hash">SESSION_VERIFICATION: SHA256//d9b0a7b45fcf80a1e0c45169bd892ab5</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
